@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { FaEthereum } from "react-icons/fa";
+import LightBlueInput from "../lightBlueInput";
 
 const PaymentBtn = () => {
   const [ethValue, setEthValue] = useState("0.000000");
@@ -12,7 +13,7 @@ const PaymentBtn = () => {
 
   return (
     <div>
-      <div className="lightBlueStyling">
+      <div className="lightBlueInput py-1 px-3">
         <span>Ethereum Payment</span>
         <div className="flex-between mt-1">
           <div className="flex-center gap-1">
@@ -32,7 +33,10 @@ const PaymentBtn = () => {
           </select>
         </div>
       </div>
-      <div className="lightBlueStyling py-3 mt-5"><p>{ethValue} ETH</p></div>
+      <div className="mt-4">
+        <LightBlueInput value={`${ethValue} ETH`} />
+      </div>
+
     </div>
   );
 };

@@ -3,7 +3,7 @@
 const SuccessBtn = ({ placeholdText }) => {
   return (
     <div>
-      <input className="bg-success p-3 rounded-md w-full"
+      <input className="primaryInput"
         placeholder={placeholdText}
         type="text" />
     </div>
